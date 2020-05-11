@@ -66,6 +66,31 @@ $smtppass = '';
 * ```$serwer_smtp``` - (SMTP Server/Host) and ```$port_smtp``` are used in PHPMailer. Fulfill with suitable data.
 * ```$smtplog``` -(email) and ```$smtppass``` are used to connect to sender email.
 
+## Database
+
+My example table users look like this:
+
+```sql
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `hash` varchar(255) NOT NULL,
+  `active` int(1) NOT NULL DEFAULT 0,
+  `usertype` varchar(255) NOT NULL DEFAULT 'normal'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`),
+  ADD UNIQUE KEY `email` (`email`);
+  
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+```
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
