@@ -5,7 +5,12 @@
 
     $flag = false;
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['xsrf'])){
+        
+        if($_POST['xsrf'] !== $_SESSION['xsrf']){
+            echo "xsrf error";
+            die();
+        }
         
         $logUser = $link->real_escape_string(htmlentities($_POST['logUser']));
         
