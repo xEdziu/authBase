@@ -9,6 +9,9 @@
             $tabLost["title"] = "Wait a minute...";
             $tabLost["icon"] = "error";
             $tabLost["btn_text"] = "Oh..";
+            
+            echo json_encode($tab_Lost);
+            die();
           }
         
         if($_POST['xsrf'] !== $_SESSION['xsrf']){
