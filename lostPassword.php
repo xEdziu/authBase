@@ -13,9 +13,10 @@
         
         if($_POST['xsrf'] !== $_SESSION['xsrf']){
             echo "xsrf error";
+            unset($_SESSION['xsrf']);
             die();
         }
-        
+        unset($_SESSION['xsrf']);
         $email = $link->real_escape_string($_POST['email']);
 
         $tabLost = ["error_msg"=>"Message with link has been sent to your email!", "title"=>"Done!", "icon"=>"success", "btn_text"=>"Uff!"];
