@@ -64,7 +64,7 @@ $smtppass = '';
 * To connect to your database you must fill 4 first lines with suitable data.
 
 * ```$serwer_smtp``` - (SMTP Server/Host) and ```$port_smtp``` are used in PHPMailer. Fulfill with suitable data.
-* ```$smtplog``` -(email) and ```$smtppass``` are used to connect to sender email.
+* ```$smtplog``` - (email) and ```$smtppass``` are used to connect to sender email.
 
 ## Database
 
