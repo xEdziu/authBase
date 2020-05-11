@@ -68,7 +68,7 @@ $smtppass = '';
 
 ## Database
 
-My example table users look like this:
+My example table ```users``` look like this:
 
 ```sql
 CREATE TABLE `users` (
