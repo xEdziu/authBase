@@ -100,7 +100,7 @@ Please make sure to update tests as appropriate.
 ## Contact
 
 You can contact me via email: 
-> adrian.goral.gmail@com
+> **adrian.goral.gmail@com**
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
