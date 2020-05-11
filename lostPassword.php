@@ -2,7 +2,19 @@
     require_once('config.php');
     require(__DIR__.'\PHPMailer-5.2-stable\PHPMailerAutoload.php');
     ob_start();
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' $$ isset($_POST['xsrf'])) {
+        
+        if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            $tabLost["error_msg"] = "Email format is invalid. Is it correct?";
+            $tabLost["title"] = "Wait a minute...";
+            $tabLost["icon"] = "error";
+            $tabLost["btn_text"] = "Oh..";
+          }
+        
+        if($_POST['xsrf'] !== $_SESSION['xsrf']){
+            echo "xsrf error";
+            die();
+        }
         
         $email = $link->real_escape_string($_POST['email']);
 
