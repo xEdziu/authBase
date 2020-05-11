@@ -5,7 +5,7 @@ It is written in objective PHP which uses MySQLi instead of PDO.
 
 authBase is using a PHPMailer-5.2-stable version, documentation here: [PHPMailer](https://github.com/PHPMailer/PHPMailer/tree/5.2-stable).
 
-Some files contains a ready PHPMailer function which is prepared to send
+Some files contains a ready PHPMailer function which is prepared to send email.
 
 Files in authBase are predicted to use AJAX or jQuery.
 
