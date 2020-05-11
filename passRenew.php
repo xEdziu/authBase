@@ -1,5 +1,8 @@
 <?php
+	session_start();
     require_once('config.php');
+
+$_SESSION['xsrf'] = md5(rand(10-10000));
 ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -23,6 +26,7 @@
                         <input type="text" name="uname" placeholder="Type username" required>
                         <input type="password" name="pass1" placeholder="Type new password" required>
                         <input type="password" name="pass2" placeholder="Powtórz nowe hasło" required>
+			<input type="hidden" name="xsrf" value="'.$_SESSION['xsrf'].'">
                         <button type="submit" id="submit">Zmień hasło</button>
                         </form>';
                     }
