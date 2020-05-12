@@ -37,7 +37,7 @@ require(__DIR__.'\PHPMailer-5.2-stable\PHPMailerAutoload.php');
         } else {
 
             $hashedPassword = password_hash($regPass, PASSWORD_ARGON2ID);
-            $hashActivate = md5(rand(0,1000));
+            $hashActivate = genUUID();
 
             if(password_verify($regPass, $hashedPassword)){
 
