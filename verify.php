@@ -19,7 +19,7 @@
                     //$search = $link->query("SELECT hash, active FROM users WHERE hash='$hash' AND active='0'");
                     
                     //if($search->num_rows > 0) {
-			if ($link->query("UPDATE users SET active='1' WHERE hash='$hash' AND active='0'"));
+			if ($link->query("UPDATE users SET active='1' WHERE hash='$hash' AND active='0'")){
 
                         //$link->query("UPDATE users SET active='1' WHERE hash='$hash' AND active='0'");
                         echo '<div>Your account has been verified.<br>You can close this tab.<br></div>';
