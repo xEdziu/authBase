@@ -65,7 +65,7 @@ $port_smtp = 465;
 $smtplog = '';
 $smtppass = '';
 
-[+function]
+//[+function]
 
 ?>
 ```
