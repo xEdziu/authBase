@@ -36,7 +36,7 @@ require(__DIR__.'\PHPMailer-5.2-stable\PHPMailerAutoload.php');
             $tab_reg["btn_text"]="Meh, OK";
         } else {
 
-            $hashedPassword = password_hash($regPass, PASSWORD_ARGON2I);
+            $hashedPassword = password_hash($regPass, PASSWORD_ARGON2ID);
             $hashActivate = md5(rand(0,1000));
 
             if(password_verify($regPass, $hashedPassword)){
