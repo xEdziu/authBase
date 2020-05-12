@@ -18,11 +18,17 @@ Feel free to use it :)
 The authBase contains files:
 
 * ```config.php```
+
 * ```login.php```
+
 * ```registration.php```
+
 * ```verify.php```
+
 * ```lostPassword.php```
+
 * ```passRenew.php```
+
 * ```passRenewWork.php```
 
 ## Relations between files
@@ -91,6 +97,7 @@ COMMIT;
 
 
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
