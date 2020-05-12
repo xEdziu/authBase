@@ -1,12 +1,18 @@
 <?php
+session_start();
 require_once('config.php');
 require(__DIR__.'\PHPMailer-5.2-stable\PHPMailerAutoload.php');
 ?>
 
 <?php
     ob_start();
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['xsrf'])) {
+        
+        if($_POST['xsrf'] !== $_SESSION['xsrf']){
+            echo "xsrf error";
+            die();
+        }
+            
         $regUser = $link->real_escape_string(htmlentities($_POST['regUser']));
         $regEmail = $link->real_escape_string($_POST['regEmail']);
         $regPass = $link->real_escape_string($_POST['regPass']);
