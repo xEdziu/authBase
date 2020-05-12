@@ -36,7 +36,7 @@
 
         } else {
 
-            $hash = md5(rand(0,1000));
+            $hash = genUUID();
 
             $check = $link->query("UPDATE users SET hash='$hash' WHERE email='$email'");
 
