@@ -139,7 +139,7 @@
                 echo 'Message was not sent.';
                 echo 'Mailer error: ' . $mail->ErrorInfo;
                    
-                $tab_Lost["error_msg"]= "Mail nie został wysłany, skontaktuj się z administracją, aby ręcznie zmienić hasło.";
+                $tab_Lost["error_msg"]= "Mail hasn't been send, contact administrator to change password manually.";
                 $tab_Lost["title"]="Błąd systemu. ".$mail->ErrorInfo;
                 $tab_Lost["icon"]="error";
                 $tab_Lost["btn_text"]="OK"; 
