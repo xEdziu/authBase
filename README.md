@@ -65,6 +65,8 @@ $port_smtp = 465;
 $smtplog = '';
 $smtppass = '';
 
+[+function]
+
 ?>
 ```
 * To connect to your database you must fill 4 first lines with suitable data.
