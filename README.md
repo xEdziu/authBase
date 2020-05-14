@@ -83,8 +83,8 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT;
   `username` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  `hash` varchar(255) NOT NULL,
+  `password` varchar(2000) NOT NULL,
+  `hash` varchar(2000) NOT NULL,
   `active` int(1) NOT NULL DEFAULT 0,
   `usertype` varchar(255) NOT NULL DEFAULT 'normal'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
