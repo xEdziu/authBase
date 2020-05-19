@@ -29,7 +29,7 @@ require(__DIR__.'\PHPMailer-5.2-stable\PHPMailerAutoload.php');
             $tab_reg["title"]="Wait a minute...";
             $tab_reg["icon"]="error";
             $tab_reg["btn_text"]="Meh, OK";
-        }  elseif  ($row_cnt_e > 0){
+        }  else if  ($row_cnt_e > 0){
             $tab_reg["error_msg"]= "There's account linked to this email address!";
             $tab_reg["title"]="Wait a minute...";
             $tab_reg["icon"]="error";
