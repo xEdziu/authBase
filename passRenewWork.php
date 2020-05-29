@@ -13,8 +13,8 @@
 
         if ($pass1 === $pass2){
 
-            $hashedPassword = password_hash($pass1, PASSWORD_ARGON2I);
-            if(password_verify($regPass, $hashedPassword)){
+            $hashedPassword = password_hash($pass1, PASSWORD_ARGON2ID);
+            if(password_verify($pass1, $hashedPassword)){
                 $update = $link->query("UPDATE users SET password='$pass1' WHERE username='$uname'");
             } else {
                 $tabRenew = ["error_msg"=>"Problem occured, contact admin to change password manually", "title"=>"Wait a minute...", "icon"=>"error", "btn_text"=>"Not good.."];
