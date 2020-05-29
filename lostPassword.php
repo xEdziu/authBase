@@ -42,7 +42,7 @@
 
             $email_message = 
                 'Hi! We heard that you lost your password. To change it, click this link".
-                http://yourpage.com/passRenew?hash='.$hash.'<br>
+                http://yourpage.com/passRenew.php?hash='.$hash.'<br>
                 You did not ask for password change? Contact admin right now.' ;
                 $email_message = wordwrap($email_message, 70, "\r\n");
 
