@@ -27,7 +27,7 @@ $_SESSION['xsrf'] = md5(rand(10-10000));
                         <input type="password" name="pass1" placeholder="Type new password" required>
                         <input type="password" name="pass2" placeholder="Repeat new password" required>
 			<input type="hidden" name="xsrf" value="'.$_SESSION['xsrf'].'">
-                        <button type="submit" id="submit">Zmień hasło</button>
+                        <button type="submit" id="submit">Change password</button>
                         </form>';
                     }
                     else {
