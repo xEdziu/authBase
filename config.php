@@ -10,7 +10,7 @@
 }
 
 $serwer_smtp = "";
-$port_smtp = 465;
+$port_smtp = ;
 
 $smtplog = '';
 $smtppass = '';
