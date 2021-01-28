@@ -7,9 +7,9 @@ authBase is using a PHPMailer-5.2-stable version, documentation here: [PHPMailer
 
 Some files contains a ready PHPMailer function which is prepared to send email.
 
-Files in authBase are predicted to use AJAX or jQuery.
+Files in authBase are prepared to use AJAX or jQuery.
 
-It can be easily used with [sweetAlert2](https://sweetalert2.github.io/) library for fancy alerts.
+It is compatibile with [sweetAlert2](https://sweetalert2.github.io/) library for fancy alerts.
 
 Feel free to use it :)
 
